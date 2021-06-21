@@ -16,11 +16,11 @@ print("Welcome to battleships!")
 
 
 """
-Request user to select number of rows
+Request user to select grid size
 """
 while True:
     try:
-        rows = int(input("\nPlease enter the number of rows (4-9).\n"))
+        rows = columns = int(input("\nPlease enter the grid size (4-9).\n"))
     except ValueError:
         print("\nThat is not a number! Try again")
     else:
@@ -28,21 +28,6 @@ while True:
             break
         else:
             print("\nInvalid number, please try again.")
-
-
-"""
-Request user to select number of columns
-"""
-while True:
-    try:
-        columns = int(input("\nPlease enter the number of columns(4-9).\n"))
-    except ValueError:
-        print("That is not a number! Try again\n")
-    else:
-        if 4 <= columns < 10:
-            break
-        else:
-            print("Invalid number, please try again.\n")
 
 
 def create_board(r, c):
