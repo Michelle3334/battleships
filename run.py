@@ -4,6 +4,8 @@ import random
 rows = 0
 columns = 0
 board = []
+ship_row = 0
+ship_column = 0
 turns = 0
 
 
@@ -101,8 +103,6 @@ def setup():
     ship_row = random_row(board)
     global ship_column
     ship_column = random_col(board)
-    print(ship_row)
-    print(ship_column)
 
 
 setup()
@@ -116,7 +116,7 @@ while turns != 5:
     while True:
         try:
             row_guess = int(input(
-                f"Guess row (Enter number between 1 and {rows})\n"
+                f"Guess row (Enter number between 1 and {rows}\n")
             )
         except ValueError:
             print("That is not a number! Try again")
@@ -129,7 +129,7 @@ while turns != 5:
     while True:
         try:
             column_guess = int(input(
-               f"Guess column (Enter number between 1 and {columns})\n"
+               f"Guess column (Enter number between 1 and {columns}\n")
             )
         except ValueError:
             print("That is not a number! Try again")
@@ -143,7 +143,6 @@ while turns != 5:
         update_hit(board, row_guess, column_guess)
         display_board(board, rows, columns)
         print("You hit the battleship! Congratulations!")
-        break
 
     elif (board[row_guess-1][column_guess-1] == "X"):
         print("You guessed that already.")
