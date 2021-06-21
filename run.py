@@ -153,4 +153,4 @@ while turns != 5:
         display_board(board, rows, columns)
 
 if (turns >= 5):
-    print("\nSorry, You ran out of bombs and failed to sink the ship")
+    print("\nSorry, You ran out of bombs and failed to sink the ship. :-(")
