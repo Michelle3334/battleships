@@ -20,14 +20,14 @@ Request user to select number of rows
 """
 while True:
     try:
-        rows = int(input("Please enter the number of rows (4-9).\n"))
+        rows = int(input("\nPlease enter the number of rows (4-9).\n"))
     except ValueError:
-        print("That is not a number! Try again")
+        print("\nThat is not a number! Try again")
     else:
         if 4 <= rows < 10:
             break
         else:
-            print("Invalid number, please try again.")
+            print("\nInvalid number, please try again.")
 
 
 """
@@ -35,14 +35,14 @@ Request user to select number of columns
 """
 while True:
     try:
-        columns = int(input("Please enter the number of columns(4-9).\n"))
+        columns = int(input("\nPlease enter the number of columns(4-9).\n"))
     except ValueError:
-        print("That is not a number! Try again")
+        print("That is not a number! Try again\n")
     else:
         if 4 <= columns < 10:
             break
         else:
-            print("Invalid number, please try again.")
+            print("Invalid number, please try again.\n")
 
 
 def create_board(r, c):
@@ -116,41 +116,41 @@ while turns != 5:
     while True:
         try:
             row_guess = int(input(
-                f"Guess row (Enter number between 1 and {rows}\n")
+                f"Guess row: Enter number between 1 and {rows}\n")
             )
         except ValueError:
-            print("That is not a number! Try again")
+            print("\nThat is not a number! Try again")
         else:
             if 1 <= row_guess <= rows:
                 break
             else:
-                print("Invalid row number, please try again.")
+                print("\nInvalid row number, please try again.")
 
     while True:
         try:
             column_guess = int(input(
-               f"Guess column (Enter number between 1 and {columns}\n")
+               f"\nGuess column: Enter number between 1 and {columns}\n")
             )
         except ValueError:
-            print("That is not a number! Try again")
+            print("\nThat is not a number! Try again")
         else:
             if 1 <= column_guess <= columns:
                 break
             else:
-                print("Invalid column number, please try again.")
+                print("\nInvalid column number, please try again.")
 
     if (row_guess == ship_row) and (column_guess == ship_column):
         update_hit(board, row_guess, column_guess)
         display_board(board, rows, columns)
-        print("You hit the battleship! Congratulations!")
+        print("You hit the battleship! Congratulations!\n")
 
     elif (board[row_guess-1][column_guess-1] == "X"):
-        print("You guessed that already.")
+        print("\nYou guessed that already.")
 
     else:
-        print("You missed the ship.")
+        print("\nYou missed the ship.")
         update_miss(board, row_guess, column_guess)
         display_board(board, rows, columns)
 
 if (turns >= 5):
-    print("Sorry, You ran out of bombs and failed to sink the ship")
+    print("\nSorry, You ran out of bombs and failed to sink the ship")
