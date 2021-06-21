@@ -4,8 +4,6 @@ import random
 rows = 0
 columns = 0
 board = []
-ship_row = 0
-ship_column = 0
 turns = 0
 
 
@@ -86,10 +84,10 @@ def setup():
     """
     create_board(rows, columns)
     display_board(board, columns, rows)
+    global ship_row
     ship_row = random_row(board)
+    global ship_column
     ship_column = random_col(board)
-    print(ship_row)
-    print(ship_column)
-
+    
 
 setup()
