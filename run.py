@@ -101,6 +101,57 @@ def setup():
     ship_row = random_row(board)
     global ship_column
     ship_column = random_col(board)
+    print(ship_row)
+    print(ship_column)
 
 
 setup()
+
+
+"""
+Play the game
+"""
+while turns != 5:
+    turns += 1
+    while True:
+        try:
+            row_guess = int(input(
+                f"Guess row (Enter number between 1 and {rows}\n")
+            )
+        except ValueError:
+            print("That is not a number! Try again")
+        else:
+            if 1 <= row_guess <= rows:
+                break
+            else:
+                print("Invalid row number, please try again.")
+
+    while True:
+        try:
+            column_guess = int(input(
+               f"Guess column (Enter number between 1 and {columns}\n")
+            )
+        except ValueError:
+            print("That is not a number! Try again")
+        else:
+            if 1 <= column_guess <= columns:
+                break
+            else:
+                print("Invalid column number, please try again.")
+
+    if (row_guess == ship_row) and (column_guess == ship_column):
+        update_hit(board, row_guess, column_guess)
+        display_board(board, rows, columns)
+        print("You hit the battleship! Congratulations!")
+        break
+
+    elif (board[row_guess-1][column_guess-1] == "X"):
+        print("You guessed that already.")
+
+    else:
+        print("You missed the ship.")
+        update_miss(board, row_guess, column_guess)
+        display_board(board, rows, columns)
+
+if (turns >= 5):
+    print("Sorry, You ran out of bombs and failed to sink the ship")
