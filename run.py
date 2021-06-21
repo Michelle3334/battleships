@@ -116,7 +116,7 @@ while turns != 5:
     while True:
         try:
             row_guess = int(input(
-                f"Guess row (Enter number between 1 and {rows}\n")
+                f"Guess row (Enter number between 1 and {rows})\n"
             )
         except ValueError:
             print("That is not a number! Try again")
@@ -129,7 +129,7 @@ while turns != 5:
     while True:
         try:
             column_guess = int(input(
-               f"Guess column (Enter number between 1 and {columns}\n")
+               f"Guess column (Enter number between 1 and {columns})\n"
             )
         except ValueError:
             print("That is not a number! Try again")
