@@ -67,6 +67,20 @@ def display_board(board, columns, rows):
         print(number, '| ' + ' | '.join(rows) + ' |')
 
 
+
+"""
+Random placement of ship on board
+"""
+
+
+def random_row(board):
+    return random.randint(1, len(board) - 1)
+
+
+def random_col(board):
+    return random.randint(1, len(board[0]) - 1)
+
+
 def setup():
     """
     Run all the functions
