@@ -43,3 +43,36 @@ while True:
             break
         else:
             print("Invalid number, please try again.")
+
+
+def create_board(r, c):
+    """
+    Create game board
+    """
+    for _ in range(rows):
+        row = []
+        for _ in range(columns):
+            row.append(" ")
+        board.append(row)
+    return board
+
+
+def display_board(board, columns, rows):
+    """
+    Display the game board
+    """
+    column_names = '123456789'[:columns]
+    print('  | ' + ' | '.join(column_names) + ' |')
+    for number, rows in enumerate(board, 1):
+        print(number, '| ' + ' | '.join(rows) + ' |')
+
+
+def setup():
+    """
+    Run all the functions
+    """
+    create_board(rows, columns)
+    display_board(board, columns, rows)
+
+
+setup()
