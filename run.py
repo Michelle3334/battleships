@@ -67,7 +67,6 @@ def display_board(board, columns, rows):
         print(number, '| ' + ' | '.join(rows) + ' |')
 
 
-
 """
 Random placement of ship on board
 """
@@ -87,6 +86,10 @@ def setup():
     """
     create_board(rows, columns)
     display_board(board, columns, rows)
+    ship_row = random_row(board)
+    ship_column = random_col(board)
+    print(ship_row)
+    print(ship_column)
 
 
 setup()
