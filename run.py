@@ -78,6 +78,19 @@ def random_col(board):
     return random.randint(1, len(board[0]) - 1)
 
 
+"""
+Functions for updating game board for hit or miss
+"""
+
+
+def update_hit(board, row_guess, column_guess):
+    board[row_guess-1][column_guess-1] = 'O'
+
+
+def update_miss(board, row_guess, column_guess):
+    board[row_guess-1][column_guess-1] = 'X'
+
+
 def setup():
     """
     Run all the functions
@@ -88,6 +101,6 @@ def setup():
     ship_row = random_row(board)
     global ship_column
     ship_column = random_col(board)
-    
+
 
 setup()
