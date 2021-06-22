@@ -15,7 +15,8 @@ The purpose of this project was to build an interactive logic game for a user to
 
 # Link to app
 The app can be found <a href="https://battleships-py.herokuapp.com/" target="_blank" rel="noopener">here</a>. (Note: Right click on link to open a new tab).
-<img src="images/program.PNG" width=200 height=200>
+
+<img src="images/program.PNG">
 
 # Features
 * The player can select grid size.
@@ -33,7 +34,7 @@ The app can be found <a href="https://battleships-py.herokuapp.com/" target="_bl
 * GitHub is used to store the projects code after being pushed from Git.
 ### Lucidchart
 * Lucidchart was used to map the workflow for the game.
-<img src="images/workflow.PNG" width=200 height=200>
+<img src="images/workflow.PNG">
 
 # Testing
 ## Functionality testing
@@ -41,7 +42,7 @@ The app can be found <a href="https://battleships-py.herokuapp.com/" target="_bl
 * Family members and friends were asked to test the app once the final product was deployed.
 ## Code Validation
 * The code was checked using Pep8online checker.
-<img src="images/code-check.PNG" width=200 height=200>
+<img src="images/code-check.PNG">
 
 # Deployment
 The project was deployed to GitHub Pages using the following steps, I used Gitpod as a development environment where I commited all changes to git version control system. I used the push command in Gitpod to save changes into GitHub:
