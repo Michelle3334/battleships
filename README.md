@@ -23,7 +23,7 @@ The app can be found <a href="https://battleships-py.herokuapp.com/" target="_bl
 * The program warns the player if the input is invalid, and also if their input is off grid.
 * The player inputs their name which is updated to a google sheet.
 * Messages to the player are personalised with their name.
-* The player is told what number player they are.
+* The player is told what number player they are (information is obtained from the google sheet).
 
 [Back to Table of Contents](https://github.com/Michelle3334/battleships#table-of-contents)
 
