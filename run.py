@@ -166,7 +166,7 @@ while turns != 5:
         break
 
     elif (board[row_guess-1][column_guess-1] == "X"):
-        print("\nYou guessed that already.")
+        print("\nYou guessed that already and wasted a bomb.")
 
     else:
         print("\nYou missed the ship.")
