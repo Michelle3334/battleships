@@ -140,6 +140,7 @@ while turns != 5:
         update_hit(board, row_guess, column_guess)
         display_board(board, rows, columns)
         print("You hit the battleship! Congratulations!\n")
+        break
 
     elif (board[row_guess-1][column_guess-1] == "X"):
         print("\nYou guessed that already.")
