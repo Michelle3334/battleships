@@ -25,6 +25,11 @@ The app can be found <a href="https://battleships-py.herokuapp.com/" target="_bl
 * Messages to the player are personalised with their name.
 * The player is told what number player they are (information is obtained from the google sheet).
 * Once all bombs are used the player can see where the ship was.
+#### Future features
+* Increased number ships depending on the grid size selected.
+* Increased number of tries based on grid size.
+* Option to play again once all tries used.
+* Keep track of scores per player.
 
 [Back to Table of Contents](https://github.com/Michelle3334/battleships#table-of-contents)
 
@@ -41,6 +46,8 @@ The app can be found <a href="https://battleships-py.herokuapp.com/" target="_bl
 
 ### Code Institutes mock terminal
 * Code Institute provided a mock terminal for use for the project.
+### Google Sheets
+* Google Sheets was used to store the player names. The link to the sheet can be found <a href="https://docs.google.com/spreadsheets/d/1OPAWWCRL8g2KF1MZQvM3CO5YMLDQ9V1aOPwTJgWPhGc/edit#gid=0" target="_blank" rel="noopener">here</a>. (Note: Right click on link to open a new tab).
 
 [Back to Table of Contents](https://github.com/Michelle3334/battleships#table-of-contents)
 
