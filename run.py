@@ -111,6 +111,16 @@ def update_miss(board, row_guess, column_guess):
     board[row_guess-1][column_guess-1] = 'X'
 
 
+"""
+Function to update game board after running out
+of bombs
+"""
+
+
+def final_board(board, ship_row, ship_column):
+    board[ship_row-1][ship_column-1] = 'O'
+
+
 def setup():
     """
     Run all the functions
@@ -123,7 +133,8 @@ def setup():
     ship_row = random_row(board)
     global ship_column
     ship_column = random_col(board)
-
+    print(ship_row)
+    print(ship_column)
 
 setup()
 
@@ -176,3 +187,7 @@ while turns != 5:
 if (turns >= 5):
     print(f"\nSorry {name} :-(")
     print("You ran out of bombs and failed to sink the ship.")
+    print("See how close you were!")
+    update_miss(board, row_guess, column_guess)
+    final_board(board, ship_row, ship_column)
+    display_board(board, rows, columns)
