@@ -133,8 +133,7 @@ def setup():
     ship_row = random_row(board)
     global ship_column
     ship_column = random_col(board)
-    print(ship_row)
-    print(ship_column)
+
 
 setup()
 

@@ -24,6 +24,7 @@ The app can be found <a href="https://battleships-py.herokuapp.com/" target="_bl
 * The player inputs their name which is updated to a google sheet.
 * Messages to the player are personalised with their name.
 * The player is told what number player they are (information is obtained from the google sheet).
+* Once all bombs are used the player can see where the ship was.
 
 [Back to Table of Contents](https://github.com/Michelle3334/battleships#table-of-contents)
 
