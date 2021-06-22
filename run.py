@@ -13,6 +13,7 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open("battleships")
 
+name = ""
 rows = 0
 columns = 0
 board = []
@@ -24,7 +25,8 @@ turns = 0
 """
 Welcome message
 """
-print("Welcome to battleships!")
+name = input("Enter your name here:\n")
+print(f"\nWelcome to battleships {name}. Let's play!")
 
 
 """
@@ -139,7 +141,7 @@ while turns != 5:
     if (row_guess == ship_row) and (column_guess == ship_column):
         update_hit(board, row_guess, column_guess)
         display_board(board, rows, columns)
-        print("You hit the battleship! Congratulations!\n")
+        print(f"You hit the battleship! Congratulations {name}!\n")
         break
 
     elif (board[row_guess-1][column_guess-1] == "X"):
@@ -151,4 +153,5 @@ while turns != 5:
         display_board(board, rows, columns)
 
 if (turns >= 5):
-    print("\nSorry, You ran out of bombs and failed to sink the ship. :-(")
+    print(f"\nSorry {name} :-(")
+    print("You ran out of bombs and failed to sink the ship.")
