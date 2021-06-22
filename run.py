@@ -14,6 +14,7 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open("battleships")
 
 name = [""]
+number = 0
 rows = 0
 columns = 0
 board = []
@@ -36,7 +37,15 @@ def update_sheet(data):
     players_name.append_row([data])
 
 
-print(f"\nWelcome to battleships {name}. Let's play!")
+print(f"\nWelcome to battleships {name}.")
+
+
+def get_number():
+    """
+    Get the last row in the sheet
+    """
+    number = len(SHEET.worksheet("players").get_all_values()) - 1
+    print(f"You are player number: {number}. Let's play!")
 
 
 """
@@ -107,6 +116,7 @@ def setup():
     Run all the functions
     """
     update_sheet(name)
+    get_number()
     create_board(rows, columns)
     display_board(board, columns, rows)
     global ship_row
