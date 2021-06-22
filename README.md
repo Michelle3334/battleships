@@ -25,6 +25,8 @@ The app can be found <a href="https://battleships-py.herokuapp.com/" target="_bl
 * Messages to the player are personalised with their name.
 * The player is told what number player they are.
 
+[Back to Table of Contents](https://github.com/Michelle3334/battleships#table-of-contents)
+
 # Technologies Used:
 ### Programming Languages:
 * Python
@@ -36,6 +38,11 @@ The app can be found <a href="https://battleships-py.herokuapp.com/" target="_bl
 * Lucidchart was used to map the workflow for the game.
 <img src="images/workflow.PNG">
 
+### Code Institutes mock terminal
+* Code Institute provided a mock terminal for use for the project.
+
+[Back to Table of Contents](https://github.com/Michelle3334/battleships#table-of-contents)
+
 # Testing
 ## Functionality testing
 * Each piece of code was tested in Gitpod as well as in Python Tutor (where possible).
@@ -43,6 +50,8 @@ The app can be found <a href="https://battleships-py.herokuapp.com/" target="_bl
 ## Code Validation
 * The code was checked using Pep8online checker.
 <img src="images/code-check.PNG">
+
+[Back to Table of Contents](https://github.com/Michelle3334/battleships#table-of-contents)
 
 # Deployment
 The project was deployed to GitHub Pages using the following steps, I used Gitpod as a development environment where I commited all changes to git version control system. I used the push command in Gitpod to save changes into GitHub:
@@ -71,3 +80,5 @@ https://codereview.stackexchange.com/questions/122970/python-simple-battleship-g
 * CSN tutors for their quick assistance.
 * My mentor for support, advice and feedback.
 * My family for their endless support, feedback and testing.
+
+[Back to Table of Contents](https://github.com/Michelle3334/battleships#table-of-contents)
