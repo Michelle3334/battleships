@@ -13,7 +13,7 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open("battleships")
 
-name = ""
+name = [""]
 rows = 0
 columns = 0
 board = []
@@ -23,9 +23,19 @@ turns = 0
 
 
 """
-Welcome message
+Welcome player
 """
 name = input("Enter your name here:\n")
+
+
+def update_sheet(data):
+    """
+    Update worksheet with new players name
+    """
+    players_name = SHEET.worksheet("players")
+    players_name.append_row([data])
+
+
 print(f"\nWelcome to battleships {name}. Let's play!")
 
 
@@ -96,6 +106,7 @@ def setup():
     """
     Run all the functions
     """
+    update_sheet(name)
     create_board(rows, columns)
     display_board(board, columns, rows)
     global ship_row
