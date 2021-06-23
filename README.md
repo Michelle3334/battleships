@@ -8,10 +8,11 @@ The purpose of this project was to build an interactive logic game for a user to
 1. [Link to app](https://github.com/Michelle3334/battleships#link-to-app)
 2. [Features](https://github.com/Michelle3334/battleships#features)
 3. [Technologies Used](https://github.com/Michelle3334/battleships#technologies-used)
-4. [Testing](https://github.com/Michelle3334/battleships#testing)
-5. [Deployment](https://github.com/Michelle3334/battleships#deployment)
-6. [Credits](https://github.com/Michelle3334/battleships#credits)
-7. [Acknowledgements](https://github.com/Michelle3334/battleships#acknowledgements)
+4. [Development]()
+5. [Testing](https://github.com/Michelle3334/battleships#testing)
+6. [Deployment](https://github.com/Michelle3334/battleships#deployment)
+7. [Credits](https://github.com/Michelle3334/battleships#credits)
+8. [Acknowledgements](https://github.com/Michelle3334/battleships#acknowledgements)
 
 # Link to app
 The app can be found <a href="https://battleships-py.herokuapp.com/" target="_blank" rel="noopener">here</a>. (Note: Right click on link to open a new tab).
@@ -25,7 +26,7 @@ The app can be found <a href="https://battleships-py.herokuapp.com/" target="_bl
 * Messages to the player are personalised with their name.
 * The player is told what number player they are (information is obtained from the google sheet).
 * Once all bombs are used the player can see where the ship was.
-#### Future features
+#### Future possible features
 * Increased number ships depending on the grid size selected.
 * Increased number of tries based on grid size.
 * Option to play again once all tries used.
@@ -51,6 +52,10 @@ The app can be found <a href="https://battleships-py.herokuapp.com/" target="_bl
 
 [Back to Table of Contents](https://github.com/Michelle3334/battleships#table-of-contents)
 
+# Development
+* In order to access google sheets I needed to import the gspread module and credentials from the google.oauth2.service_account.
+* I need the battleship to be placed randomly on the game board, so for that functionality I imported the random library.
+ 
 # Testing
 ## Functionality testing
 * Each piece of code was tested in Gitpod as well as in Python Tutor (where possible).
