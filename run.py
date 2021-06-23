@@ -173,6 +173,7 @@ while turns != 5:
         update_hit(board, row_guess, column_guess)
         display_board(board, rows, columns)
         print(f"You hit the battleship! Congratulations {name}!\n")
+        print("Click 'RUN PROGRAM' to play again")
         break
 
     elif (board[row_guess-1][column_guess-1] == "X"):
@@ -190,3 +191,4 @@ if (turns >= 5):
     update_miss(board, row_guess, column_guess)
     final_board(board, ship_row, ship_column)
     display_board(board, rows, columns)
+    print("Click 'RUN PROGRAM' to play again.")
