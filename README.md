@@ -8,7 +8,7 @@ The purpose of this project was to build an interactive logic game for a user to
 1. [Link to app](https://github.com/Michelle3334/battleships#link-to-app)
 2. [Features](https://github.com/Michelle3334/battleships#features)
 3. [Technologies Used](https://github.com/Michelle3334/battleships#technologies-used)
-4. [Development]()
+4. [Development](https://github.com/Michelle3334/battleships#development)
 5. [Testing](https://github.com/Michelle3334/battleships#testing)
 6. [Deployment](https://github.com/Michelle3334/battleships#deployment)
 7. [Credits](https://github.com/Michelle3334/battleships#credits)
@@ -54,7 +54,7 @@ The app can be found <a href="https://battleships-py.herokuapp.com/" target="_bl
 
 # Development
 * In order to access google sheets I needed to import the gspread module and credentials from the google.oauth2.service_account.
-* I need the battleship to be placed randomly on the game board, so for that functionality I imported the random library.
+* I wanted the battleship to be placed randomly on the game board, so for that functionality I imported the random library.
  
 # Testing
 ## Functionality testing
@@ -82,16 +82,16 @@ The project was then deployed to Heroku using the following steps:
 2. Link the project from GitHub to Heroku.
 3. Add the CREDS.JSON file to the ConfigVars in Settings.
 4. Add the Python and NodeJS buildpacks.
-5. Manually deploy the project (I used the manual deploy option in order to control what version was deployed).
+5. Manually deploy the project (I used the manual deploy option in order to control what version was deployed to the live environment).
 
 # Credits
-* The code for the structure of the grid was adapted from the below example (right click to open in new tab).
+* The code for the structure of the game board was adapted from the below example (right click to open in new tab).
 https://codereview.stackexchange.com/questions/122970/python-simple-battleship-game
-* Stackoverflow was great resource for resolving questions I had. 
+* Stackoverflow was great resource for answering questions I had. 
 
 # Acknowledgements
 * CSN tutors for their quick assistance.
 * My mentor for support, advice and feedback.
-* My family for their endless support, feedback and testing.
+* My friends and family for their support, feedback and user testing.
 
 [Back to Table of Contents](https://github.com/Michelle3334/battleships#table-of-contents)
